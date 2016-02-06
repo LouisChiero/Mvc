@@ -162,7 +162,7 @@ namespace Microsoft.AspNetCore.Mvc.Formatters
         }
 
         /// <inheritdoc />
-        public IReadOnlyList<string> GetSupportedContentTypes(string contentType, Type objectType)
+        public virtual IReadOnlyList<string> GetSupportedContentTypes(string contentType, Type objectType)
         {
             if (!CanReadType(objectType))
             {
